@@ -1,5 +1,11 @@
 <template>
   <div class="bg-white rounded-2xl shadow-xl border border-blue-100 p-6 flex flex-col group hover:shadow-2xl transition-all duration-200">
+    <!-- Dummy Listing Image -->
+    <img
+      :src="imageSrc"
+      alt="Listing image"
+      class="w-full h-40 object-cover rounded-xl mb-4 border border-slate-100"
+    />
     <div class="flex items-center gap-3 mb-2">
       <div class="bg-blue-100 text-blue-700 rounded-full p-2">
         <slot name="icon" />
@@ -28,5 +34,14 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ title: string, description: string, location: string, type: string, price: number, contactLink: string }>()
+const props = defineProps<{ title: string, description: string, location: string, type: string, price: number, contactLink: string }>()
+
+// Dummy images for each type
+const typeImages: Record<string, string> = {
+  Apartment: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
+  House: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
+  Room: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80',
+  Default: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
+}
+const imageSrc = typeImages[props.type] || typeImages.Default
 </script>
