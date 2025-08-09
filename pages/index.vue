@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-200 flex flex-col">
+  <div class="min-h-screen bg-gradient-to-br from-slate-100 via-white to-slate-200 flex flex-col">
     <HeroSection />
 
     <!-- Featured Listings Section -->
     <section class="max-w-6xl mx-auto px-4 pb-10">
-      <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-6 mt-4">Featured Listings</h2>
+  <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 mt-4">Featured Listings</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <ListingCard
           v-for="listing in featuredListings"
@@ -27,7 +27,7 @@
 
     <!-- Problem Statement and Solution Section -->
     <section class="max-w-4xl mx-auto my-16 p-8 bg-white rounded-xl shadow-lg">
-      <h2 class="text-3xl font-bold mb-4 text-center text-blue-700">Why We Built This Platform</h2>
+  <h2 class="text-3xl font-bold mb-4 text-center text-slate-700">Why We Built This Platform</h2>
       <p class="text-lg mb-6 text-gray-700 text-center">
         <span class="font-semibold">Problem Statement:</span> Finding safe, affordable, and trustworthy housing is a major challenge for students and young professionals. Traditional rental platforms often lack transparency, verified listings, and a sense of community, leading to scams, privacy concerns, and a stressful search experience.
       </p>
@@ -37,13 +37,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="w-full py-6 bg-blue-50 mt-16 border-t border-blue-100">
+  <footer class="w-full py-6 bg-slate-50 mt-16 border-t border-slate-100">
       <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         <span class="text-gray-500 text-sm">&copy; 2025 Peer Housing Platform. All rights reserved.</span>
         <div class="flex space-x-4 mt-2 md:mt-0">
-          <a href="#" class="text-blue-600 hover:underline text-sm">About</a>
-          <a href="#" class="text-blue-600 hover:underline text-sm">Contact</a>
-          <a href="#" class="text-blue-600 hover:underline text-sm">Privacy Policy</a>
+          <a href="#" class="text-slate-600 hover:underline text-sm">About</a>
+          <a href="#" class="text-slate-600 hover:underline text-sm">Contact</a>
+          <a href="#" class="text-slate-600 hover:underline text-sm">Privacy Policy</a>
         </div>
       </div>
     </footer>
