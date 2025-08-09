@@ -6,11 +6,22 @@
       </template>
       <template #listingInfo>
         <p class="font-semibold text-blue-700">Listing: <span class="text-gray-700">Sunny Apartment in City Center</span></p>
-        <p class="font-semibold text-blue-700">Landlord: <span class="text-gray-700">Jane Doe</span></p>
+        <p class="font-semibold text-blue-700">Mover: <span class="text-gray-700">Jane Doe</span> <span class="inline-block bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-semibold ml-1">Verified</span></p>
       </template>
       <div>
         <label class="block mb-1 font-semibold text-blue-700">Your Message</label>
         <textarea class="w-full border border-blue-200 rounded px-3 py-2 bg-gray-50" rows="4" placeholder="Hi, I am interested in your listing. Is it still available?" disabled></textarea>
+      </div>
+      <div class="flex flex-col gap-2 my-3">
+        <label class="inline-flex items-center text-sm text-blue-700">
+          <input type="checkbox" class="form-checkbox mr-2" checked disabled /> Allow contact by email
+        </label>
+        <label class="inline-flex items-center text-sm text-blue-700">
+          <input type="checkbox" class="form-checkbox mr-2" disabled /> Allow contact by phone
+        </label>
+        <label class="inline-flex items-center text-sm text-blue-700">
+          <input type="checkbox" class="form-checkbox mr-2" checked disabled /> Hide my real name
+        </label>
       </div>
       <button type="button" class="w-full bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 text-white py-2 rounded-lg font-bold shadow-lg transition-all duration-200" disabled>Send Message</button>
     </ContactCard>
