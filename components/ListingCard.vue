@@ -17,7 +17,7 @@
     <div class="flex flex-wrap gap-2 mb-2 text-sm">
       <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">{{ location }}</span>
       <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">{{ type }}</span>
-      <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">${{ price }}/mo</span>
+  <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">₦{{ price }}/mo</span>
     </div>
     <!-- Dummy review/rating section -->
     <div class="mb-2">
