@@ -1,3 +1,7 @@
+| `/verify/mover`      | Mover document verification form   |
+| `/verify/agent`      | Agent document verification form   |
+| `/verify/mover`      | Mover document verification form   |
+| `/verify/agent`      | Agent document verification form   |
 
 # Peer-to-Peer Housing Platform (MIT-811 School Project)
 
