@@ -1,14 +1,3 @@
-## App Routes
-
-| Route                | Description                       |
-|----------------------|-----------------------------------|
-| `/`                  | Landing page                      |
-| `/listings`          | Browse/search listings            |
-| `/listings/create`   | Create a new listing              |
-| `/auth/signin`       | Sign in (Tenant, Landlord, Agent) |
-| `/auth/signup`       | Sign up (Tenant, Landlord, Agent) |
-| `/contact`           | Contact form                      |
-| `/profile`           | User profile (static)             |
 
 # Peer-to-Peer Housing Platform (MIT-811 School Project)
 
@@ -32,6 +21,19 @@ This project is a static MVP for a Peer-to-Peer Housing Platform, built as part 
 - User profile page (static)
 - Privacy controls and review system (static)
 - Consistent, modern UI using slate color palette
+
+## App Routes
+
+| Route                | Description                       |
+|----------------------|-----------------------------------|
+| `/`                  | Landing page                      |
+| `/listings`          | Browse/search listings            |
+| `/listings/create`   | Create a new listing              |
+| `/auth/signin`       | Sign in (Tenant, Landlord, Agent) |
+| `/auth/signup`       | Sign up (Tenant, Landlord, Agent) |
+| `/contact`           | Contact form                      |
+| `/profile`           | User profile (static)             |
+
 
 ## How to Use
 1. Clone or download this repository.
