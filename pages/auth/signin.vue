@@ -8,9 +8,10 @@
       <div>
   <label class="block mb-1 font-semibold text-slate-700">Role</label>
   <select v-model="role" class="w-full border border-slate-200 rounded px-3 py-2 focus:ring-2 focus:ring-slate-200">
-          <option value="Tenant">Tenant</option>
-          <option value="Landlord">Landlord</option>
-        </select>
+    <option value="Tenant">Tenant</option>
+    <option value="Landlord">Landlord</option>
+    <option value="Agent">Agent</option>
+  </select>
       </div>
       <div>
   <label class="block mb-1 font-semibold text-slate-700">Email</label>

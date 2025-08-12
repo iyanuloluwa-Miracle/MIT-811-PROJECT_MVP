@@ -17,7 +17,11 @@
     <div class="flex flex-wrap gap-2 mb-2 text-sm">
       <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">{{ location }}</span>
       <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">{{ type }}</span>
-  <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">₦{{ price }}/mo</span>
+      <span v-if="type === 'Agent'" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-md border-2 border-white animate-pulse">
+        <svg xmlns='http://www.w3.org/2000/svg' class='h-4 w-4 inline' fill='currentColor' viewBox='0 0 20 20'><path d='M10 2a8 8 0 100 16 8 8 0 000-16zm3.93 6.36l-4.24 4.24a1 1 0 01-1.42 0l-2.12-2.12a1 1 0 111.42-1.42l1.41 1.41 3.53-3.53a1 1 0 111.42 1.42z'/></svg>
+        Verified Agent
+      </span>
+      <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">₦{{ price }}/mo</span>
     </div>
     <!-- Dummy review/rating section -->
     <div class="mb-2">
@@ -36,12 +40,13 @@
 <script setup lang="ts">
 const props = defineProps<{ title: string, description: string, location: string, type: string, price: number, contactLink: string }>()
 
-// Dummy images for each type
+// Dummy images for each type (including Agent)
 const typeImages: Record<string, string> = {
-  Apartment: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
-  House: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80',
-  Room: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80',
-  Default: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80',
+  Apartment: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80', // African apartment/home
+  House: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // African house
+  Room: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // African room (using house image)
+  Agent: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // African agent (using house image)
+  Default: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80',
 }
 const imageSrc = typeImages[props.type] || typeImages.Default
 </script>
