@@ -1,3 +1,15 @@
+## App Routes
+
+| Route                | Description                       |
+|----------------------|-----------------------------------|
+| `/`                  | Landing page                      |
+| `/listings`          | Browse/search listings            |
+| `/listings/create`   | Create a new listing              |
+| `/auth/signin`       | Sign in (Tenant, Landlord, Agent) |
+| `/auth/signup`       | Sign up (Tenant, Landlord, Agent) |
+| `/contact`           | Contact form                      |
+| `/profile`           | User profile (static)             |
+
 # Peer-to-Peer Housing Platform (MIT-811 School Project)
 
 ## Project Overview
