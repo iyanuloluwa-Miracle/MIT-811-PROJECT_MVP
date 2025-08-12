@@ -42,11 +42,11 @@ const props = defineProps<{ title: string, description: string, location: string
 
 // Dummy images for each type (including Agent)
 const typeImages: Record<string, string> = {
-  Apartment: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80', // African apartment/home
-  House: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // African house
-  Room: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // African room (using house image)
-  Agent: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // African agent (using house image)
-  Default: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80',
+  Apartment: 'https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=400&q=80', // Modern African apartment (e.g., urban Nairobi or Lagos)
+  House: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80', // African house (e.g., traditional or modern suburban home)
+  Room: 'https://images.unsplash.com/photo-1618221195710-dd2b64383520?auto=format&fit=crop&w=400&q=80', // African room (e.g., culturally decorated interior)
+  Agent: 'https://images.unsplash.com/photo-1532094349884-543995b5f930?auto=format&fit=crop&w=400&q=80', // African professional (e.g., real estate agent in African context)
+  Default: 'https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=400&q=80', // Fallback to modern African apartment
 }
 const imageSrc = typeImages[props.type] || typeImages.Default
 </script>

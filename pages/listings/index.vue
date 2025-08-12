@@ -59,7 +59,7 @@ const listings = ref([
     title: 'Sunny Apartment in City Center',
     description: 'Spacious 2-bedroom apartment with lots of sunlight and close to amenities.',
     location: 'Downtown',
-    price: 1200,
+    price: '1.2M',
     type: 'Apartment',
   },
   {
@@ -67,7 +67,7 @@ const listings = ref([
     title: 'Cozy Room in Shared House',
     description: 'Affordable room in a friendly shared house.',
     location: 'Suburb',
-    price: 500,
+    price: '900k',
     type: 'Room',
   },
   {
@@ -75,7 +75,7 @@ const listings = ref([
     title: 'Family House with Garden',
     description: '3-bedroom house with a large garden, perfect for families.',
     location: 'Uptown',
-    price: 1800,
+    price: '1.8M',
     type: 'House',
   },
 ])

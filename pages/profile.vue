@@ -46,7 +46,7 @@ const myListings = [
     title: 'Sunny Apartment in City Center',
     description: 'Spacious 2-bedroom apartment with lots of sunlight and close to amenities.',
     location: 'Downtown',
-    price: 1200,
+    price: '1.2M',
     type: 'Apartment',
   },
   {
@@ -54,7 +54,7 @@ const myListings = [
     title: 'Cozy Room in Shared House',
     description: 'Affordable room in a friendly shared house.',
     location: 'Suburb',
-    price: 500,
+    price: '1.8M',
     type: 'Room',
   },
 ]
