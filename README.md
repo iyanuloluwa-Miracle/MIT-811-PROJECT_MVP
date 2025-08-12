@@ -1,7 +1,3 @@
-| `/verify/mover`      | Mover document verification form   |
-| `/verify/agent`      | Agent document verification form   |
-| `/verify/mover`      | Mover document verification form   |
-| `/verify/agent`      | Agent document verification form   |
 
 # Peer-to-Peer Housing Platform (MIT-811 School Project)
 
@@ -37,6 +33,8 @@ This project is a static MVP for a Peer-to-Peer Housing Platform, built as part 
 | `/auth/signup`       | Sign up (Tenant, Landlord, Agent) |
 | `/contact`           | Contact form                      |
 | `/profile`           | User profile (static)             |
+| `/verify/mover`      | Mover document verification form   |
+| `/verify/agent`      | Agent document verification form   |
 
 
 ## How to Use
