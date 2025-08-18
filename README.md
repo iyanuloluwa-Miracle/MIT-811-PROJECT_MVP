@@ -49,11 +49,15 @@ Add screenshots of your app here:
 ![Landing Page](./assets/Screenshot/P2P_Image1.png)
 ![Landing Page](./assets/Screenshot/P2P_Image2.png)
 ![Listings Page](./assets/Screenshot/P2P_Image3.png)
-![Create Listing](screenshots/create-listing.png)
-![Create Listing](screenshots/create-listing.png)
 ![SignUp Page](./assets/Screenshot/P2P_Image5.png)
 ![Signin Page](./assets/Screenshot/P2P_Image4.png)
-![Create Listing](screenshots/create-listing.png)
+![Create Listing](./assets/Screenshot/P2P_Image6.png)
+![Create Listing](./assets/Screenshot/P2P_Image6.png)
+![Profile](./assets/Screenshot/P2P_Image8.png)
+![Contact](./assets/Screenshot/P2P_Image6.png)
+![Verify Agent](./assets/Screenshot/P2P_Image9.png)
+![Verify Mover](./assets/Screenshot/P2P_Image10.png)
+
 
 ## Student Details
 - **Name:**
