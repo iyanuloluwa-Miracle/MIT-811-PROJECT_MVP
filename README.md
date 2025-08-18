@@ -46,7 +46,7 @@ This project is a static MVP for a Peer-to-Peer Housing Platform, built as part 
 ## Screenshots
 Add screenshots of your app here:
 
-![Landing Page](screenshots/landing.png)
+![Landing Page](./assets/Screenshot/P2P_Image1.png)
 ![Listings Page](screenshots/listings.png)
 ![Create Listing](screenshots/create-listing.png)
 
