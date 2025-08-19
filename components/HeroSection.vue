@@ -4,11 +4,55 @@
       <div class="absolute -top-32 -left-32 w-96 h-96 bg-blue-200 rounded-full opacity-30 blur-3xl animate-pulse"></div>
       <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-blue-400 rounded-full opacity-20 blur-3xl animate-pulse"></div>
     </div>
-    <h1 class="text-5xl md:text-6xl font-extrabold text-blue-900 mb-6 drop-shadow-lg tracking-tight">Find Your Next Home, Effortlessly</h1>
-    <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">Peer-to-peer housing made simple. Browse listings, connect with landlords or tenants, and manage your housing journey—all in one place.</p>
-    <div class="flex flex-col md:flex-row gap-6 justify-center mb-14 z-10">
+    <h1 ref="heroTitle" class="text-5xl md:text-6xl font-extrabold text-blue-900 mb-6 drop-shadow-lg tracking-tight opacity-0">Find Your Next Home, Effortlessly</h1>
+    <p ref="heroSubtitle" class="text-xl md:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto opacity-0">Peer-to-peer housing made simple. Browse listings, connect with landlords or tenants, and manage your housing journey—all in one place.</p>
+    <div ref="heroButtons" class="flex flex-col md:flex-row gap-6 justify-center mb-14 z-10 opacity-0">
       <NuxtLink to="/listings" class="transition-all duration-200 bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 text-white px-10 py-4 rounded-xl font-bold shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-200">Browse Listings</NuxtLink>
       <NuxtLink to="/listings/create" class="transition-all duration-200 bg-white border-2 border-blue-600 text-blue-700 px-10 py-4 rounded-xl font-bold shadow-lg hover:bg-blue-50 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-200">Create Listing</NuxtLink>
     </div>
   </section>
 </template>
+
+<script setup>
+import { onMounted, ref } from 'vue'
+import { gsap } from 'gsap'
+
+const heroTitle = ref(null)
+const heroSubtitle = ref(null)
+const heroButtons = ref(null)
+
+onMounted(() => {
+  // Create timeline for smooth sequential animations
+  const tl = gsap.timeline()
+  
+  // Animate title first
+  tl.to(heroTitle.value, {
+    opacity: 1,
+    y: 0,
+    duration: 1.2,
+    ease: "power3.out"
+  })
+  
+  // Then subtitle
+  .to(heroSubtitle.value, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.8")
+  
+  // Finally buttons with a slight bounce
+  .to(heroButtons.value, {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    ease: "back.out(1.7)"
+  }, "-=0.6")
+  
+  // Set initial positions
+  gsap.set([heroTitle.value, heroSubtitle.value, heroButtons.value], {
+    y: 50,
+    opacity: 0
+  })
+})
+</script>
