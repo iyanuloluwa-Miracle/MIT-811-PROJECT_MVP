@@ -59,10 +59,12 @@ Add screenshots of your app here:
 
 
 ## Student Details
-- **Name:**
-- **Matric Number:**
+- **Name:**  Dina Iyanuloluwa Anuoluwapo
+
 
 > _Please fill in your name and matric number above before submission._
+
+
 
 ---
 _MIT-811 School Project – Peer-to-Peer Housing Platform_
